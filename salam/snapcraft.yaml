@@ -1,0 +1,26 @@
+name: salam
+version: '0.0.1'
+grade: devel
+summary: Say Salam
+description: |
+    Just say Salam
+    and that's it.!
+
+base: core22
+
+confinement: devmode
+
+parts:
+    salam:
+        plugin: dotnet
+        dotnet-build-configuration: Release
+        dotnet-self-contained-runtime-identifier: linux-x64
+        source: .
+        build-packages:
+            - dotnet-sdk-7.0
+        # stage-packages:
+        #     - libicu70
+
+apps:
+    salam:
+        command: salam
