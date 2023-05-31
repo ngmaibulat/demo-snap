@@ -19,7 +19,7 @@ echo $SNAPCRAFT_STORE_CREDENTIALS
 snapcraft whoami
 
 snapcraft register salam
-snapcraft upload --release=edge salam_0.0.1_amd64.snap
+snapcraft upload --release=edge salam_*_amd64.snap
 
 # Revision 1 created for 'salam' and released to 'edge'
 ```
@@ -28,4 +28,11 @@ snapcraft upload --release=edge salam_0.0.1_amd64.snap
 
 ```bash
 sudo snap install --edge salam --devmode
+which salam
+```
+
+### Update
+
+```bash
+sudo snap refresh salam --devmode
 ```

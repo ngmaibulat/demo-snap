@@ -8,7 +8,7 @@
     <PublishSingleFile>true</PublishSingleFile>
 
     <PackageId>salam</PackageId>
-    <Version>0.0.1</Version>
+    <Version>0.0.2</Version>
     <Authors>Aibulat</Authors>
     <ToolCommandName>salam</ToolCommandName>
 
