@@ -1,6 +1,7 @@
 name: salam
-version: '0.0.2'
-grade: devel
+version: '0.0.3'
+# grade: devel
+grade: stable
 summary: Say Salam
 description: |
     Just say Salam
@@ -8,7 +9,8 @@ description: |
 
 base: core22
 
-confinement: devmode
+# confinement: devmode
+confinement: strict
 
 parts:
     salam:

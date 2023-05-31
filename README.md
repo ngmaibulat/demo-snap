@@ -36,3 +36,15 @@ which salam
 ```bash
 sudo snap refresh salam --devmode
 ```
+
+### Info
+
+```bash
+snap info salam
+snap list
+snap list --all
+snap list --all | grep salam
+snap list --all | grep salam | grep edge
+snap list --all | grep salam | grep edge | awk '{print $1}'
+# snap list --all | grep salam | grep edge | awk '{print $1}' | xargs snap remove
+```
