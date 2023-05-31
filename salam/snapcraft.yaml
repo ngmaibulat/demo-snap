@@ -18,8 +18,8 @@ parts:
         source: .
         build-packages:
             - dotnet-sdk-7.0
-        # stage-packages:
-        #     - libicu70
+        stage-packages:
+            - libicu70
 
 apps:
     salam:
