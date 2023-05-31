@@ -1,0 +1,22 @@
+name: salam-c
+version: '0.0.1'
+# grade: devel
+grade: stable
+summary: Say Salam
+description: |
+    Just say Salam
+
+base: core22
+
+# confinement: devmode
+confinement: strict
+
+parts:
+    salam:
+        plugin: dump
+        source: .
+
+apps:
+    salam-c:
+        command: salam-c
+        plugs: [network, home]
