@@ -20,8 +20,15 @@ snapcraft whoami
 
 snapcraft register salam
 snapcraft upload --release=edge salam_*_amd64.snap
-
+snapcraft upload  salam_*_amd64.snap
 # Revision 1 created for 'salam' and released to 'edge'
+```
+
+### Release
+
+```bash
+snapcraft release salam 4 stable
+sudo snap install salam
 ```
 
 ### Install

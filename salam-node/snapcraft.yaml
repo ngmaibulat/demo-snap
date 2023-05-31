@@ -1,0 +1,23 @@
+name: salam-node
+version: '0.0.1'
+# grade: devel
+grade: stable
+summary: Say Salam
+description: |
+    Just say Salam
+    by uisng nodejs
+    and that's it.!
+
+base: core22
+
+# confinement: devmode
+confinement: strict
+
+parts:
+    salam:
+        plugin: nodejs
+        source: .
+
+apps:
+    salam:
+        command: salam-node
