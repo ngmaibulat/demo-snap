@@ -12,13 +12,9 @@ base: core22
 confinement: strict
 
 parts:
-    salam-c:
-        plugin: cmake
+    salam:
+        plugin: dump
         source: .
-        source-type: local
-        build-packages:
-            - build-essential
-            - cmake
 
 apps:
     salam-c:
