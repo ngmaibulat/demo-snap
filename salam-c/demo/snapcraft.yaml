@@ -1,0 +1,27 @@
+name: salam-c
+version: '1.0'
+summary: My C++ Program
+description: |
+  This is a sample C++ program packaged using Snapcraft.
+
+grade: stable
+confinement: strict
+
+base: core22
+
+parts:
+  salam-c:
+    plugin: cmake
+    source: .
+    source-type: local
+    build-packages:
+      - build-essential
+      - cmake
+
+apps:
+  salam-c:
+    command: salam-c
+    plugs:
+      - home
+      - network
+
