@@ -1,11 +1,11 @@
-name: salam-rust
-version: '0.0.2'
+name: salam-python
+version: '0.0.1'
 # grade: devel
 grade: stable
 summary: Say Salam
 description: |
     Just say Salam
-    From a Rust app
+    From a Python app
 
 base: core22
 
@@ -13,11 +13,11 @@ base: core22
 confinement: strict
 
 parts:
-    salam:
-        plugin: dump
+    salam-python:
+        plugin: python
         source: .
 
 apps:
-    salam-rust:
-        command: salam-rust
+    salam-python:
+        command: salam-python
         plugs: [network, home]
