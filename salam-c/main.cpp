@@ -1,7 +1,19 @@
 #include <iostream>
 
-using namespace std;
+// using namespace std;
+// import std;
 
-int main() {
-    cout << "Salam Aleikum!" << endl;
+std::string msg = R"(
+    Salam
+    Aleikum!
+)";
+
+bool val = true;
+
+int main()
+{
+    if (val)
+    {
+        std::cout << msg << std::endl;
+    }
 }

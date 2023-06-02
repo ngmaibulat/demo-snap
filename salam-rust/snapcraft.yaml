@@ -1,0 +1,23 @@
+name: salam-rust
+version: '0.0.1'
+# grade: devel
+grade: stable
+summary: Say Salam
+description: |
+    Just say Salam
+    From a Rust app
+
+base: core22
+
+# confinement: devmode
+confinement: strict
+
+parts:
+    salam:
+        plugin: dump
+        source: .
+
+apps:
+    salam-c:
+        command: salam-rust
+        plugs: [network, home]

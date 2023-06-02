@@ -1,0 +1,25 @@
+{
+    // Comments are allowed
+    /* Multi-line comments too */
+
+    // Unquoted keys
+    firstName: 'John',
+    lastName: 'Doe',
+
+    // Single-quoted strings
+    greeting: 'Hello, "World"!',
+
+    // Trailing commas
+    fruits: [
+        'Apple',
+        'Banana',
+        'Orange', // Trailing comma
+    ],
+
+    // Hexadecimal, octal, and binary numbers
+    numbers: {
+        hex: 0xff,
+        octal: 0o77,
+        binary: 0b1010,
+    },
+}

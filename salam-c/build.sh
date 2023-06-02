@@ -9,6 +9,8 @@ cmake --build ./build
 
 os=$(uname)
 
+### Before first run, make sure to register snap name
+
 # Check if the OS is not Darwin
 if [ "$os" != "Darwin" ]; then
     mkdir snapcraft-build
