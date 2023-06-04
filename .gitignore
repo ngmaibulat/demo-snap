@@ -6,3 +6,34 @@ build/
 *.snap
 *.o
 
+
+__pycache__
+.pytest_cache
+.coverage
+
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+/dist/
+/build/
+*.egg-info/
+
+# Environment settings
+.env
+venv/
+.env.*
+
+# IDE specific files
+.idea/
+.vscode/
+
+# Miscellaneous
+.DS_Store
+Thumbs.db

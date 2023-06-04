@@ -2,6 +2,7 @@
 
 -   go to Ubuntu machine
 -   clone repo
+-   sudo snap install snapcraft --classic
 -   start LXD: `lxd init --auto`
 -   in folder with the project run: `snapcraft`
 -   check, we have file `*.snap` in the folder
