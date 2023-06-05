@@ -1,7 +1,7 @@
 import unittest
 import sys
 
-sys.path.append("..")
+# sys.path.append("..")
 
 from pkg.package1 import salam
 
